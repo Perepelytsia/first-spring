@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head> 
+        <title>Add article</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <header th:insert="blocks/header :: header"></header>
+        <main>
+          <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <h1>Student</h1>
+            <form action="/student" method="post">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" placeholder="Enter name" th:value="${student.name}">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="grade" placeholder="Enter grade"  th:value="${student.grade}">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </main>
+        <footer th:insert="blocks/footer :: footer"></footer>
+    </body>
+</html>
