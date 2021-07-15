@@ -4,7 +4,6 @@ package com.example.controllers;
  *
  * @author sith
  */
-import com.example.models.Article;
 import com.example.models.Student;
 import com.example.repo.StudentRepository;
 import java.util.Optional;
