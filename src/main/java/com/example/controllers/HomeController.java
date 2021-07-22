@@ -14,12 +14,12 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("title", "home page");
-        return "home";
+        return "home-main";
     }
                 
     @GetMapping("/home")
     public String about(Model model) {
         model.addAttribute("title", "home page");
-        return "home";
+        return "home-main";
     }
 }
